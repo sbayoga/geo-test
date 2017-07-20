@@ -1,0 +1,83 @@
+.radar-chart-component {
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    text-align: center;
+    h1 {
+        text-align: left;
+        margin: 1rem 0 .5rem;
+    }
+    .chart-information {
+        margin: 0;
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: start;
+        min-height: 600px;
+        @media(max-width: 768px) {
+            flex-wrap: wrap;
+            min-height: auto;
+        }
+        .chart {
+            flex-basis: 70%;
+            display: flex;
+            font-weight: normal;
+            margin: 0;
+            background: #EEEEEE;
+            border: 1px solid #BDBDBD;
+            min-height: 600px;
+            @media(max-width: 768px) {
+                svg {
+                    max-width: 100%;
+                }
+                flex-basis: 100%;
+                min-height: auto;
+            }
+        }
+        .legend-chart {
+            display: flex;
+            flex-basis: 30%;
+            background: #1976D2;
+            border: 1px solid #1976D2;
+            border-left: none;
+            min-height: 600px;
+            align-items: flex-end;
+            padding: 0 .75rem;
+            @media(max-width: 768px) {
+                flex-basis: 100%;
+                min-height: auto;
+                padding: .5rem;
+            }
+            .legend-box {
+                flex: 1;
+                margin: 0 0 .75rem;
+                padding: 0rem .5rem;
+                background: #FFF;
+                border-radius: 5px;
+                @media(max-width: 768px) {
+                    margin: 0;
+                }
+                .legend-item {
+                    list-style: none;
+                    text-align: left;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    margin: .5rem 0;
+                    .color-legend {
+                        width: 15px;
+                        height: 15px;
+                        margin: 0 .75rem 0 0;
+                        border-radius: 2px;
+                    }
+                    .name-legend-item {
+                        color: #3b3b3b;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}

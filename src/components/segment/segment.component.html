@@ -1,0 +1,14 @@
+<ul class="segment-component">
+    <li *ngFor="let segment of getConfig(segment)" [ngStyle]="{ 'border-bottom': '2px solid ' + getStyleSheet(segment) }" class="segment-item">
+        <header class="header-segment-component">
+            <h2 class="title" [ngStyle]="{ 'color': getStyleSheet(segment) }" [innerText]="getName(segment)"></h2>
+        </header>
+        <section [ngStyle]="{ 'background': getStyleSheet(segment) }" class="quantity-area">
+            <h3 class="quantity" [innerText]="getPopulation(segment)"></h3>
+            <p [innerText]="getPopulationTag(segment)"></p>
+        </section>
+        <footer class="footer-segment-component">
+            <p [innerText]="getAddress(segment)"></p>
+        </footer>
+    </li>
+</ul>

@@ -1,0 +1,63 @@
+ul.segment-component {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: start;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    @media(max-width: 768px) {
+        display: block;
+    }
+    .segment-item {
+        font-family: 'Raleway', sans-serif;
+        list-style: none;
+        text-align: center;
+        margin: 0 .05rem;
+        letter-spacing: .08rem;
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+        @media(max-width: 768px) {
+            margin: .5rem 0;
+        }
+        header,
+        h2,
+        h3,
+        p {
+            flex-basis: 100%;
+            font-weight: normal;
+            margin: 0;
+            &.quantity {
+                font-family: 'Work Sans', sans-serif;
+                font-size: 3rem;
+                margin: 0 0 .25rem;
+            }
+            &.title {
+                margin: 0 0 .5rem;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        .quantity-area {
+            flex-basis: 100%;
+            background: #ccc;
+            color: #FFF;
+            padding: 1rem;
+        }
+        .footer-segment-component {
+            flex-basis: 100%;
+            padding: .75rem .5rem 1.25rem;
+            font-size: .8rem;
+            p {
+                margin: 0 0 .25rem;
+                color: #000;
+            }
+        }
+    }
+}

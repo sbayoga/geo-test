@@ -1,0 +1,12 @@
+$color-primary: #009688;
+.main-content {
+    color: $color-primary;
+    max-width: 960px;
+    padding: 2rem .75rem;
+    width: 100%;
+    margin: 0 auto;
+    @media(max-width: 768px) {
+        width: auto;
+        padding: .75rem;
+    }
+}

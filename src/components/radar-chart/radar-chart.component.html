@@ -1,0 +1,14 @@
+<section class="radar-chart-component">
+    <h1>General graph comparision</h1>
+    <section class="chart-information">
+        <article id="chart" class="chart"></article>
+        <aside class="legend-chart">
+            <ul class="legend-box">
+                <li class="legend-item" *ngFor="let item of getLegendsItems()">
+                    <span class="color-legend" [ngStyle]="{'background-color': item['color']}"></span>
+                    <span class="name-legend-item" [innerText]="item['name']"></span>
+                </li>
+            </ul>
+        </aside>
+    </section>
+</section>
